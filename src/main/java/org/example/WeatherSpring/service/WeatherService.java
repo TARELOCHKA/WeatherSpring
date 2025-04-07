@@ -1,6 +1,5 @@
 package org.example.WeatherSpring.service;
 
-import lombok.RequiredArgsConstructor;
 import org.example.WeatherSpring.dto.WeatherResponse;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -14,7 +13,6 @@ public class WeatherService {
     @Value("${weather.api.key}")
     private String apiKey;
 
-    // Используем текущий Weather API вместо One Call
     @Value("${weather.api.url}")
     private String weatherUrl;
 
